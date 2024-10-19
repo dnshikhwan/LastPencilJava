@@ -1,0 +1,22 @@
+# course config files
+*.yaml
+
+# gradle
+.gradle/
+build
+
+
+# idea config
+.idea
+
+# old stages
+/Last Pencil (Java)/*
+!/Last Pencil (Java)/task/
+/Last Pencil (Java)/task/*
+!/Last Pencil (Java)/task/src
+
+# Project exclude paths
+/Topics/Boolean type and operations. True and false/Is it a Beach Day  Check the Skies/out/
+/Topics/Boolean type and operations. True and false/Is it a Beach Day  Check the Skies/out/production/classes/
+/Topics/Floating-point types/Evaluate an expression/out/
+/Topics/Floating-point types/Evaluate an expression/out/production/classes/

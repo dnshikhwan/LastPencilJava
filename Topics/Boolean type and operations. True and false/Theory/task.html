@@ -1,0 +1,90 @@
+<div class="step-text">
+<p>The <code class="language-java">boolean</code> <a class="theory-lookup not-relevant" href="/learn/step/3516" rel="noopener noreferrer nofollow" target="_blank" title="In Java, a data type is a category that determines the type of data a variable can hold and the operations that can be performed on it. | Java has two groups of data types: primitive and reference types. Primitive data types are built-in and include eight types, such as int (integer number), float and double (fractional numbers), and boolean (true or false values). Reference types, on the other hand, are used to represent objects, and they are created using the keyword new. When a reference type is created, memory is allocated for the object, and it is called instantiation. Floating-point types, such as float and double, represent numbers that contain an integer part, a fractional part, and their separator, commonly used in fields such as science, statistics, and engineering.">data type</a> in Java is used to represent logical values, which can have only two possible states: <code class="language-java">true</code> and <code class="language-java">false</code>. It is used for creating conditions and logic in programs, allowing programmers to make decisions based on Boolean conditions. <br/><br/>
+This data type is particularly useful for implementing logic related to binary states, such as on/off, yes/no, and similar situations.</p>
+<h5 id="boolean-type">Boolean type</h5>
+<p>The <code class="language-java">boolean</code> is a data type that has only two possible values: <code class="language-java">false</code> and <code class="language-java">true</code>. This is also known as the <strong>logical type</strong>.</p>
+<p>This type is a common way in programming languages to represent something that has only two opposite states like <em>on</em> or <em>off</em>, <em>yes</em> or <em>no</em>, etc.</p>
+<p style="text-align: center;"><picture><img alt="true or false choose image" height="227" src="https://ucarecdn.com/50cbf6b2-6d44-44d6-b5ef-b1426bdde305/" width="227"/></picture></p>
+<p>If you are writing an application that keeps track of opening and closing a door you'll find it natural to use a <code class="language-java">boolean</code> to store the current door state.</p>
+<pre><code class="language-java">boolean open = true;
+boolean closed = false;
+
+System.out.println(open);   // true
+System.out.println(closed); // false</code></pre>
+<p> </p>
+<p> </p>
+<p> </p>
+<p></p>
+<div class="alert alert-warning">
+<p> </p>
+<p>Important, you cannot assign an integer value to a <code class="language-java">boolean</code> variable. In Java, 0 is not the same as <code class="language-java">false</code>.</p>
+<p> </p>
+<p></p></div>
+<p> </p>
+<p> </p>
+<p> </p>
+<h5 id="logical-operators">Logical operators</h5>
+<p><a class="theory-lookup not-relevant" href="/learn/step/3516" rel="noopener noreferrer nofollow" target="_blank" title="In Java, a variable is a named storage location that is used to store a value of a specific type. | It is declared with a specific data type, which determines the kind of value that can be stored in it. Every variable has a unique name, also known as an identifier, which is used to access its value. Variables can be declared and initialized in a single statement, and their value can be accessed and modified using the name. It's important to note that variables can be changed, meaning you can assign a new value to a variable without having to declare it again.">Variables</a> of the <code class="language-java">boolean</code> type are often used to build <a class="theory-lookup not-relevant" href="/learn/step/3516" rel="noopener noreferrer nofollow" target="_blank" title="In Java, a logical expression is a combination of boolean expressions joined together using logical operators. | These operators include not (denoted by ! ), and (denoted by &amp;), or (denoted by ), and xor (denoted by ^). Logical expressions allow for the creation of complex logical expressions that take into account multiple factors. The use of parentheses can improve readability and is necessary when the order of operations needs to be specified explicitly. The logical operators in Java allow for the creation of complex conditions and decision-making structures in code.">logical expressions</a> using <a class="theory-lookup not-relevant" href="/learn/step/3516" rel="noopener noreferrer nofollow" target="_blank" title="In Java, logical operators are symbols used to combine or negate Boolean expressions. | There are four logical operators in Java: `!` (not), `&amp;&amp;` (and), `` (or), and `^` (xor). The `!` operator negates the Boolean value, while `&amp;&amp;` and `` return true if both, at least one, or exactly one of the operands are true, respectively. The xor operator, `^`, is used less frequently and returns true if the operands have different values. Logical operators are often used to build complex logical expressions that consider multiple factors.">logical operators</a>. Java has four logical operators <strong>NOT</strong>, <strong>AND</strong>, <strong>OR</strong> and <strong><a class="theory-lookup not-relevant" href="/learn/step/3516" rel="noopener noreferrer nofollow" target="_blank" title="In Java, the `^` operator, also known as XOR (exclusive or), compares each bit of the first operand to the corresponding bit of the second operand. | It sets the corresponding result bit to 1 if the bits are different and 0 if they are the same. The XOR operator is used less frequently than other logical operators, but it can be useful in certain situations, such as when you want to toggle a bit or flip the value of a boolean variable. The XOR operator has lower priority than the `&amp;&amp;` and `` operators. To change the order of execution, you can use parentheses. For example, if we have two integer numbers, `4` and `7`, their binary representations are `100` and `111`, respectively.">XOR</a>:</strong></p>
+<ul>
+<li>
+<p><strong>NOT</strong> is a <a class="theory-lookup not-relevant" href="/learn/step/3516" rel="noopener noreferrer nofollow" target="_blank" title="In Java, a unary operator is an operator that performs an operation on a single operand, unlike binary operators that require two operands. | There are two types of unary operators in Java: unary plus and unary minus. The unary plus operator indicates a positive value, but it is rarely used in practice because it doesn't change the value of the operand. It is used to represent a positive numeric value explicitly. On the other hand, the unary minus operator negates a value or an expression. Both unary operators have a higher level of precedence than multiplication and division operators.">unary operator</a> that reverses the boolean value. It is denoted as <code class="language-java">!</code>.</p>
+</li>
+</ul>
+<pre><code class="language-java">boolean f = false; // f is false
+boolean t = !f;    // t is true</code></pre>
+<ul>
+<li>
+<p><strong>AND</strong> is a <a class="theory-lookup not-relevant" href="/learn/step/3516" rel="noopener noreferrer nofollow" target="_blank" title="In Java, a binary operator is a type of operator that takes two operands and performs an operation on them. | An example of a binary operator is the XOR operator (^), which compares each bit of the first operand to the corresponding bit of the second operand. It sets the corresponding result bit to 1 if the bits are different and 0 if they are the same. Binary operators are used frequently in Java to perform arithmetic and logical operations on variables and values. They are essential for writing complex expressions and performing calculations in Java programs.">binary operator</a> that returns <code class="language-java">true</code> if both operands are <code class="language-java">true</code>, otherwise, it returns <code class="language-java">false</code>. It is denoted as <code class="language-java">&amp;&amp;</code>.</p>
+</li>
+</ul>
+<pre><code class="language-java">boolean b1 = false &amp;&amp; false; // false
+boolean b2 = false &amp;&amp; true;  // false
+boolean b3 = true &amp;&amp; false;  // false
+boolean b4 = true &amp;&amp; true;   // true </code></pre>
+<ul>
+<li>
+<p><strong>OR</strong> is a binary operator that returns <code class="language-java">true</code> if at least one operand is <code class="language-java">true</code>, otherwise, it returns <code class="language-java">false</code>. It is denoted as <code class="language-java">||</code>.</p>
+</li>
+</ul>
+<pre><code class="language-java">boolean b1 = false || false; // false
+boolean b2 = false || true;  // true
+boolean b3 = true || false;  // true
+boolean b4 = true || true;   // true</code></pre>
+<ul>
+<li>
+<p><strong>XOR</strong> (<strong>exclusive OR</strong>) is a binary operator that returns <code class="language-java">true</code> if boolean operands have different values, otherwise, it returns <code class="language-java">false</code>. It is denoted as <code class="language-java">^</code>.</p>
+</li>
+</ul>
+<pre><code class="language-java">boolean b1 = false ^ false; // false
+boolean b2 = false ^ true;  // true
+boolean b3 = true ^ false;  // true
+boolean b4 = true ^ true;   // false</code></pre>
+<p>The <strong>XOR</strong> operator is used less often than the others. Just remember that Java has it. If you really need it, you can use it.</p>
+<h5 id="the-precedence-of-logical-operators">The precedence of logical operators</h5>
+<p>Here are the logical operations sorted in order of decreasing priorities in expressions: <code class="language-java">!</code> (NOT), <code class="language-java">^</code> (XOR), <code class="language-java">&amp;&amp;</code> (AND), <code class="language-java">||</code> (OR).</p>
+<p>The following variable is <code class="language-java">true</code>:</p>
+<pre><code class="language-java">boolean b = true &amp;&amp; !false; // true, because !false is evaluated before &amp;&amp;
+</code></pre>
+<p>To change the order of execution you can use parentheses <code class="language-java">(...)</code>.</p>
+<h5 id="an-example-trekking">An example: trekking</h5>
+<p>As an example, let's write a complex <a class="theory-lookup not-relevant" href="/learn/step/3516" rel="noopener noreferrer nofollow" target="_blank" title="In Java, a boolean expression is an expression that evaluates to a boolean value, either true or false. | It is used to make decisions in a program based on whether a certain condition is met or not. Boolean expressions can be assigned to a boolean variable or used in control flow statements such as if-else and loop. They can be created using logical operators such as AND, OR, and NOT, which allow you to join a sequence of relational operations into one expression. An example of a boolean expression is (x &gt; 5) &amp;&amp; (y &lt; 10), which evaluates to true if both conditions x is greater than 5 and y is less than 10 are met.">boolean expression</a> that determines the possibility of trekking in summer and in other seasons. Let's suppose that the right conditions for trekking are dry warm weather in any season or dry weather in summer.</p>
+<pre><code class="language-java">boolean cold = false;
+boolean dry = true;
+boolean summer = false; // suppose now is autumn
+
+boolean trekking = dry &amp;&amp; (!cold || summer); // true, let's go trekking!</code></pre>
+<p>Do not get confused in the expression above, otherwise, you will go trek in bad weather! A programmer should understand not only arithmetic but also logical operations.</p>
+<h5 id="short-circuiting-evaluation">Short-circuiting evaluation</h5>
+<p>An interesting thing is that the <code class="language-java">&amp;&amp;</code> and <code class="language-java">||</code> operators don't evaluate the second argument if it isn't necessary. When the first argument of the <code class="language-java">&amp;&amp;</code> operator evaluates to <code class="language-java">false</code>, the overall value must be <code class="language-java">false</code>; and when the first argument of the <code class="language-java">||</code> operator evaluates to <code class="language-java">true</code>, the overall value must be <code class="language-java">true</code>. So:</p>
+<ul>
+<li>
+<p><code class="language-java">false &amp;&amp; ...</code> -&gt; <code class="language-java">false</code>, since it is not necessary to know what the right-hand side is;</p>
+</li>
+<li>
+<p><code class="language-java">true || ...</code> -&gt; <code class="language-java">true</code>, since it is not necessary to know what the right-hand side is.</p>
+</li>
+</ul>
+<p>This behavior is known as <strong><a class="theory-lookup not-relevant" href="/learn/step/3516" rel="noopener noreferrer nofollow" target="_blank" title="In Java, short-circuit evaluation is a process that occurs during the evaluation of logical expressions. | It refers to the situation where the Java virtual machine (JVM) does not fully evaluate all expressions in a logical expression if the value of the expression can be determined by evaluating only a subset of it. This is particularly useful in cases where evaluating one of the expressions has a side effect or is computationally expensive. In such cases, if the outcome of the entire expression can be determined by evaluating just one of the expressions, then the JVM will not evaluate the other expression(s) to save time and resources.">short-circuit evaluation</a></strong> (do not confuse it with <a href="https://en.wikipedia.org/wiki/Short_circuit" rel="noopener noreferrer nofollow" target="_blank">an electrical short circuit</a>). It reduces the computation time, but can also be used to avoid some errors in programs. We will discuss this in the following topics.</p>
+<h5 id="conclusion">Conclusion</h5>
+<p>The <code class="language-java">boolean</code> data type has only two possible values: <code class="language-java">false</code> and <code class="language-java">true</code>, and is used to represent logical states. The use of logical operators <code class="language-java">!</code> , <code class="language-java">^</code> , <code class="language-java">&amp;&amp;</code>, <code class="language-java">||</code>  allows for the creation of complex logical expressions that take into account multiple factors. Understanding the <a class="theory-lookup not-relevant" href="/learn/step/3516" rel="noopener noreferrer nofollow" target="_blank" title="In Java, precedence refers to the order of performing and grouping operations in an expression. | Operations with higher precedence are performed before those with lower precedence. For example, multiplication and division have a higher precedence than addition and subtraction. Parentheses can be used to specify the order of execution and can be nested. Additionally, there is a precedence order of all arithmetic operators, including parentheses, with unary plus/minus having the highest level of precedence, followed by multiplication and division, and then addition and subtraction.">precedence</a> of these operators enables proper organization of expressions and helps avoid errors.</p>
+</div>
